@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="pescamines.js"></script>
+    <link rel="stylesheet" href="pescamines.css">
 </head>
 <body>
-    <button onclick="iniciarPartida()">Iniciar Partida</button>
+    <table id="menu">
+        <tr>
+            <td><p id="mines"></p></td>
+            <td><button onclick="iniciarPartida()">Iniciar Partida</button></td>
+            <td><p id="temps"></p></td>
+        </tr>
+    </table>
     <div id="taulell"></div>
 </body>
 </html>
