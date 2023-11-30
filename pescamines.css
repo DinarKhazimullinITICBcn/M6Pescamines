@@ -1,8 +1,10 @@
+/*Fa que el body sigui una columna centrada*/
 body {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+/*Fa que el menu sigui centrar amb una direccio de fila amb una altura de 15 viewheight*/
 #menu {
     display: flex;
     align-items: center;
@@ -10,23 +12,29 @@ body {
     flex-direction: row;
     height: 15vh;
 }
+/*Canvia el tamany de la lletra a 20px*/
 #menu p {
     font-size: 20px;
 }
+/*Fa que la taula del buscamines tingui un marge de 1 pixel i que els margins que hi hagin dins
+siguin separats amb 0 de espai*/
 #buscamines {
     border: 1px solid black;
     border-collapse: separate;
     border-spacing: 0;
 }
+/*Afegeir un marge de 1 px, amb un color gris de fons amb text centrat i en negreta*/
 #buscamines td {
     border: 1px solid black;
     background-color: rgb(173, 171, 171);
     text-align: center;
     font-weight: bold;
 }
+/*En cas de que la variable data-obert sigui falsa al posar el ratoli a sobre, el nivel de brillantor sigui de 150%*/
 #buscamines td[data-obert="false"]:hover {
     filter:brightness(150%);
 }
+/*El boto canvia de de tamany, te un marge de 15px a l'esquerra i dreta i te un radio de 5px*/
 button {
     font-size: 24px;
     border-radius: 5px;
